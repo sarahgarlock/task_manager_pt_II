@@ -3,6 +3,11 @@ class TasksController < ApplicationController
     @tasks = Task.all
   end
 
+  def show
+    binding.pry
+    @task = Task.find(params[:id])
+  end
+
   def new
   end
 
